@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología Online - Tu Salud Mental</title>
+
+    <!-- 1. Tailwind CSS para los estilos (cargado rápidamente desde internet) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 2. Fuentes de Google: Lora (para títulos) y Nunito (para textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- 3. FontAwesome para los íconos (WhatsApp, Menú, Check) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 4. Le decimos a Tailwind que use nuestras nuevas fuentes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'], // Letra principal
+              serif: ['Lora', 'serif'],       // Letra para títulos
+            },
+            colors: {
+              'naranja-brand': '#f48562', // El color naranja de tu imagen
+              'rosa-brand': '#fdf0ed',    // El fondo rosado claro
+              'fucsia-brand': '#d75d7b',  // El color de los botones
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+    <!-- Aquí adentro es donde vamos a ir construyendo visualmente la página -->
+    
+    <h1 class="text-center mt-10 text-2xl font-serif">¡Mi entorno de trabajo está listo! 🎉</h1>
+
+</body>
+</html>
