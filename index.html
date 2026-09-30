@@ -3,43 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicología Online - Tu Salud Mental</title>
+    <title>Psicología Online - Salud Mental</title>
 
-    <!-- 1. Tailwind CSS para los estilos (cargado rápidamente desde internet) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- 2. Fuentes de Google: Lora (para títulos) y Nunito (para textos) -->
+    
+    <!-- Fuentes Google: Lora y Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- 3. FontAwesome para los íconos (WhatsApp, Menú, Check) -->
+    
+    <!-- FontAwesome (Iconos) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- 4. Le decimos a Tailwind que use nuestras nuevas fuentes -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Nunito', 'sans-serif'], // Letra principal
-              serif: ['Lora', 'serif'],       // Letra para títulos
+              sans: ['Nunito', 'sans-serif'],
+              serif: ['Lora', 'serif'],
             },
             colors: {
-              'naranja-brand': '#f48562', // El color naranja de tu imagen
-              'rosa-brand': '#fdf0ed',    // El fondo rosado claro
-              'fucsia-brand': '#d75d7b',  // El color de los botones
+              'brand-orange': '#F38363',
+              'brand-pink': '#FDF0ED',
+              'brand-fuchsia': '#D75D7B',
+              'brand-teal': '#4CA6A4'
             }
           }
         }
       }
     </script>
 </head>
-<body class="bg-white text-gray-800 font-sans antialiased">
+<body class="bg-white text-gray-800 font-sans antialiased relative">
 
-    <!-- Aquí adentro es donde vamos a ir construyendo visualmente la página -->
-    
-    <h1 class="text-center mt-10 text-2xl font-serif">¡Mi entorno de trabajo está listo! 🎉</h1>
+    <!-- 1. CABECERA -->
+    <header class="flex justify-between items-center px-6 py-4 bg-white shadow-sm sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <span class="font-serif italic text-2xl font-bold text-brand-orange">mh</span>
+            <span class="text-xs uppercase tracking-widest text-gray-500 font-semibold border-l border-gray-300 pl-2">Psicología Online</span>
+        </div>
+        <button class="text-gray-600 text-xl focus:outline-none">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- 2. SECCIÓN PRINCIPAL (HERO) -->
+    <section class="bg-brand-orange text-white px-6 py-12 text-center">
+        <h1 class="font-serif text-3xl font-normal leading-snug mb-4">
+            Porque tu salud mental<br>
+            <span class="font-bold">siempre es una prioridad</span>
+        </h1>
+        
+        <p class="text-base mb-8 font-light">
+            Especialistas en Psicología Online<br>
+            Cuidado integral a tu alcance
+        </p>
+
+        <!-- Puntos clave -->
+        <div class="space-y-4 mb-8 text-left max-w-sm mx-auto text-sm">
+            <div class="flex items-start space-x-3">
+                <i class="fa-regular fa-circle-check text-white text-xl"></i>
+                <p>Sesiones 100% online desde la comodidad de tu espacio</p>
+            </div>
+            <div class="flex items-start space-x-3">
+                <i class="fa-regular fa-circle-check text-white text-xl"></i>
+                <p>Equipo de psicólogas colegiadas y especializadas</p>
+            </div>
+            <div class="flex items-start space-x-3">
+                <i class="fa-regular fa-circle-check text-white text-xl"></i>
+                <p>Tratamientos personalizados según tus necesidades</p>
+            </div>
+        </div>
+
+        <!-- Botón de Acción -->
+        <a href="https://wa.me/56900000000" class="inline-block bg-white text-brand-fuchsia font-bold px-8 py-3 rounded-full shadow-lg text-sm uppercase tracking-wider">
+            Reserva tu cita aquí
+        </a>
+    </section>
+
+    <!-- 3. SECCIÓN DE PRESENTACIÓN -->
+    <section class="bg-brand-pink px-6 py-14 text-center">
+        <h2 class="font-serif text-3xl text-brand-fuchsia mb-8">
+            Bienvenida, <span class="italic font-light">soy especialista...</span>
+        </h2>
+        
+        <!-- Imagen de la Psicóloga (Enlace temporal de prueba) -->
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+             alt="Foto de perfil psicóloga" 
+             class="w-64 h-64 object-cover mx-auto rounded-3xl shadow-md mb-8 border-4 border-white">
+        
+        <!-- Textos -->
+        <div class="text-sm leading-relaxed space-y-4 max-w-md mx-auto text-left text-gray-700">
+            <p>
+                Hola, soy tu especialista en psicología clínica. Mi objetivo es acompañarte en tu proceso de autoconocimiento y brindarte las herramientas necesarias para enfrentar los desafíos de la vida.
+            </p>
+            <p>
+                Trabajaremos juntas en un espacio seguro, confidencial y libre de juicios, donde tu bienestar será siempre lo más importante. La terapia online nos permite conectar sin importar dónde te encuentres.
+            </p>
+        </div>
+
+        <!-- Botón fucsia -->
+        <a href="https://wa.me/56900000000" class="mt-8 inline-block bg-brand-fuchsia text-white font-bold px-8 py-3 rounded-full shadow-md text-sm uppercase tracking-wider">
+            Conoce mi perfil aquí
+        </a>
+    </section>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <!-- Este botón siempre se quedará en la esquina inferior derecha -->
+    <a href="https://wa.me/56900000000" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
