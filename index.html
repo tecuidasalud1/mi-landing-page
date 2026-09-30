@@ -12,11 +12,12 @@
     <!-- Navbar -->
     <nav class="bg-white shadow-sm sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <img src="164963.jpg" alt="AR Psicología Logo" class="h-12 w-12 object-cover rounded-full border border-slate-200">
-                <span class="text-xl font-bold text-slate-700">AR Psicología</span>
+            <!-- LOGO MODIFICADO: Sin texto al lado y tamaño agrandado -->
+            <div class="flex items-center">
+                <img src="164963.jpg" alt="AR Psicología Logo" class="h-20 md:h-24 w-auto object-contain">
             </div>
-            <div class="hidden md:flex space-x-6">
+            
+            <div class="hidden md:flex space-x-6 items-center">
                 <a href="#servicios" class="text-slate-600 hover:text-teal-600 transition">Servicios</a>
                 <a href="#tarifas" class="text-slate-600 hover:text-teal-600 transition">Tarifas</a>
                 <a href="#alianzas" class="text-slate-600 hover:text-teal-600 transition">Convenios</a>
@@ -75,7 +76,7 @@
         </div>
     </section>
 
-    <!-- Valores y Tarifas (NUEVA SECCIÓN) -->
+    <!-- Valores y Tarifas -->
     <section id="tarifas" class="py-16 bg-slate-50">
         <div class="max-w-5xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-slate-800 mb-4">Valores y Modalidades</h2>
@@ -122,7 +123,7 @@
         </div>
     </section>
 
-    <!-- Alianzas y Convenios (NUEVA SECCIÓN) -->
+    <!-- Alianzas y Convenios -->
     <section id="alianzas" class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold text-slate-800 mb-6">Alianzas Corporativas e Institucionales</h2>
@@ -165,7 +166,6 @@
 
         function abrirModal() {
             modal.classList.remove('hidden');
-            // Pequeño retraso para que la transición de opacidad funcione
             setTimeout(() => {
                 modal.classList.remove('opacity-0');
                 modalImg.classList.remove('scale-95');
@@ -179,7 +179,7 @@
             modalImg.classList.add('scale-95');
             setTimeout(() => {
                 modal.classList.add('hidden');
-            }, 300); // Espera a que termine la animación
+            }, 300); 
         }
     </script>
 </body>
