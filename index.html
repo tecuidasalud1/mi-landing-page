@@ -8,16 +8,15 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Fuentes Google: Lora (Elegante) y Nunito (Amigable) -->
+    <!-- Fuentes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome (Iconos) -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
-      // Colores ajustados extraídos exactamente de tu nuevo logo
       tailwind.config = {
         theme: {
           extend: {
@@ -26,10 +25,10 @@
               serif: ['Lora', 'serif'],
             },
             colors: {
-              'brand-fuchsia': '#B93959', // El rojo/fucsia del texto
-              'brand-teal': '#5AA297',    // El verde de la hojita
-              'brand-pink': '#FDF5F6',    // Un fondo rosado muy suave
-              'brand-accent': '#E87A76'   // Tono cálido de apoyo
+              'brand-fuchsia': '#B93959', 
+              'brand-teal': '#5AA297',    
+              'brand-pink': '#FDF5F6',    
+              'brand-accent': '#E87A76'   
             }
           }
         }
@@ -38,22 +37,19 @@
 </head>
 <body class="bg-white text-gray-800 font-sans antialiased relative">
 
-    <!-- 1. CABECERA (LOGO OFICIAL) -->
-    <header class="flex justify-between items-center px-4 py-3 bg-white shadow-sm sticky top-0 z-50">
-        <!-- Reemplazamos el texto por tu imagen real -->
+    <!-- 1. CABECERA (LOGO MÁS GRANDE) -->
+    <header class="flex justify-between items-center px-4 py-2 bg-white shadow-sm sticky top-0 z-50">
         <a href="#" class="flex-shrink-0">
-            <!-- NOTA: Asegúrate de que el archivo de imagen subido se llame exactamente así -->
-            <img src="164963.jpg" alt="AR Sicología Logo" class="h-14 w-auto object-contain">
+            <!-- Aumentamos significativamente el tamaño del logo a h-28 -->
+            <img src="164963.jpg" alt="AR Sicología Logo" class="h-28 w-auto object-contain py-1">
         </a>
-        
-        <button class="text-gray-400 hover:text-brand-fuchsia text-2xl transition focus:outline-none">
+        <button class="text-gray-400 hover:text-brand-fuchsia text-2xl transition focus:outline-none pr-4">
             <i class="fa-solid fa-bars"></i>
         </button>
     </header>
 
-    <!-- 2. SECCIÓN PRINCIPAL (HERO) -->
+    <!-- 2. HERO -->
     <section class="bg-brand-pink px-6 py-14 text-center relative overflow-hidden">
-        <!-- Elemento decorativo de fondo -->
         <div class="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-brand-teal opacity-10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 bg-brand-fuchsia opacity-10 rounded-full blur-3xl"></div>
 
@@ -66,7 +62,6 @@
                 Centro de atención psicológica integral. Terapias online adaptadas a ti, desde la comodidad y privacidad de tu hogar.
             </p>
 
-            <!-- Puntos clave -->
             <div class="space-y-3 mb-10 text-left max-w-xs mx-auto text-sm text-gray-700 bg-white p-5 rounded-2xl shadow-sm border border-brand-pink">
                 <div class="flex items-start space-x-3">
                     <i class="fa-solid fa-check text-brand-teal text-lg mt-0.5"></i>
@@ -78,34 +73,33 @@
                 </div>
             </div>
 
+            <!-- AQUÍ: Cambia el 56900000000 por tu número -->
             <a href="#agenda" class="inline-block bg-brand-fuchsia text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-brand-fuchsia/30 text-sm uppercase tracking-wider hover:bg-opacity-90 transition transform hover:-translate-y-1">
                 Agendar mi sesión
             </a>
         </div>
     </section>
 
-    <!-- 3. NUEVAS ÁREAS DE ATENCIÓN (Cuadrícula visual) -->
+    <!-- 3. ÁREAS DE ATENCIÓN -->
     <section class="bg-white px-6 py-16 text-center">
         <h2 class="font-serif text-2xl text-brand-fuchsia mb-2 font-bold leading-snug">
             Nuestras Áreas de Especialidad
         </h2>
         <p class="text-brand-teal text-xs uppercase tracking-widest mb-10 font-bold">Atención Integral en Psicología</p>
 
-        <!-- Grid de especialidades (2 columnas en celular, 4 en PC) -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            
             <!-- 1. Infantil -->
             <div class="group flex flex-col items-center bg-gray-50 p-4 rounded-2xl border border-gray-100 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1543333995-a78aea2eee50?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
                      alt="Atención Infantil" 
                      class="w-20 h-20 rounded-full object-cover shadow-sm mb-3 group-hover:scale-105 transition-transform">
                 <h3 class="text-sm font-bold text-gray-800 leading-tight mb-1">Atención<br>Infantil</h3>
                 <p class="text-[10px] text-gray-500 leading-tight">Desarrollo emocional, conducta y aprendizaje.</p>
             </div>
 
-            <!-- 2. Adultos e Individual -->
+            <!-- 2. Adultos -->
             <div class="group flex flex-col items-center bg-gray-50 p-4 rounded-2xl border border-gray-100 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
                      alt="Terapia Adultos" 
                      class="w-20 h-20 rounded-full object-cover shadow-sm mb-3 group-hover:scale-105 transition-transform">
                 <h3 class="text-sm font-bold text-gray-800 leading-tight mb-1">Adultos e<br>Individual</h3>
@@ -114,7 +108,7 @@
 
             <!-- 3. Parejas -->
             <div class="group flex flex-col items-center bg-gray-50 p-4 rounded-2xl border border-gray-100 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1520635360276-857e84cc8e8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
                      alt="Terapia de Pareja" 
                      class="w-20 h-20 rounded-full object-cover shadow-sm mb-3 group-hover:scale-105 transition-transform">
                 <h3 class="text-sm font-bold text-gray-800 leading-tight mb-1">Terapia de<br>Pareja</h3>
@@ -123,79 +117,55 @@
 
             <!-- 4. Trauma y Ansiedad -->
             <div class="group flex flex-col items-center bg-gray-50 p-4 rounded-2xl border border-gray-100 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                <img src="https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
                      alt="Trauma y Ansiedad" 
                      class="w-20 h-20 rounded-full object-cover shadow-sm mb-3 group-hover:scale-105 transition-transform">
                 <h3 class="text-sm font-bold text-gray-800 leading-tight mb-1">Traumas y<br>Ansiedad</h3>
                 <p class="text-[10px] text-gray-500 leading-tight">Reprocesamiento, fobias y sanación profunda.</p>
             </div>
-
         </div>
     </section>
 
-    <!-- 4. SECCIÓN CALENDARIO Y EQUIPO (NUEVO) -->
+    <!-- 4. SECCIÓN CALENDARIO Y EQUIPO (CON NUEVA ESPECIALIDAD) -->
     <section id="agenda" class="bg-gray-50 px-6 py-16">
-        <h2 class="font-serif text-2xl text-center font-bold text-gray-800 mb-2 leading-snug">Reserva tu hora con nuestro equipo</h2>
-        <p class="text-center text-gray-500 text-sm mb-10 max-w-sm mx-auto">Selecciona al especialista según tu necesidad y elige un horario para coordinar tu cita.</p>
+        <h2 class="font-serif text-2xl text-center font-bold text-gray-800 mb-2 leading-snug">Reserva tu hora de atención</h2>
+        <p class="text-center text-gray-500 text-sm mb-10 max-w-sm mx-auto">Selecciona el horario que más te acomode y coordinaremos tu cita directamente por WhatsApp.</p>
 
-        <!-- Contenedor del equipo -->
         <div class="space-y-5 max-w-md mx-auto">
             
-            <!-- TARJETA PROFESIONAL 1 (Aline) -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-200">
+            <!-- TARJETA PROFESIONAL (Aline) -->
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-brand-teal/30">
                 <div class="flex items-center space-x-4 mb-4 pb-4 border-b border-gray-100">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" class="w-16 h-16 rounded-full object-cover border-2 border-brand-teal">
                     <div>
                         <h3 class="font-bold text-gray-800">Ps. Aline Rubilar G.</h3>
-                        <p class="text-xs text-brand-teal font-semibold">Traumas, Ansiedad y Adultos</p>
+                        <p class="text-xs text-brand-teal font-semibold">Psicóloga Clínica Integral<br><span class="text-gray-500 font-medium">Terapia Infantil y Adolescentes</span></p>
                     </div>
                 </div>
                 
-                <p class="text-xs text-gray-500 mb-3 font-semibold uppercase tracking-wider"><i class="fa-regular fa-calendar-check mr-1"></i> Horas próximas:</p>
-                <!-- Botones de horas (Redirigen a WhatsApp con mensaje automático) -->
+                <p class="text-xs text-gray-500 mb-3 font-semibold uppercase tracking-wider"><i class="fa-regular fa-calendar-check mr-1"></i> Horarios disponibles:</p>
                 <div class="flex flex-wrap gap-2">
-                    <a href="https://wa.me/56900000000?text=Hola,%20quiero%20agendar%20con%20Aline%20el%20Lunes%20a%20las%2010:00" target="_blank" class="px-3 py-1.5 bg-brand-teal/10 text-brand-teal text-xs font-bold rounded border border-brand-teal/20 hover:bg-brand-teal hover:text-white transition">Lun 10:00</a>
-                    <a href="https://wa.me/56900000000?text=Hola,%20quiero%20agendar%20con%20Aline%20el%20Miercoles%20a%20las%2016:30" target="_blank" class="px-3 py-1.5 bg-brand-teal/10 text-brand-teal text-xs font-bold rounded border border-brand-teal/20 hover:bg-brand-teal hover:text-white transition">Mié 16:30</a>
-                    <a href="https://wa.me/56900000000?text=Hola,%20quiero%20consultar%20disponibilidad%20con%20Aline" target="_blank" class="px-3 py-1.5 bg-gray-100 text-gray-600 text-xs font-bold rounded hover:bg-gray-200 transition">Ver más horarios</a>
+                    <!-- AQUÍ: Cambia el 56900000000 por tu número real -->
+                    <a href="https://wa.me/56900000000?text=Hola,%20quiero%20agendar%20una%20sesión%20en%20el%20horario%20de%20Mañana" target="_blank" class="px-3 py-1.5 bg-brand-teal/10 text-brand-teal text-xs font-bold rounded border border-brand-teal/20 hover:bg-brand-teal hover:text-white transition">Bloque Mañana</a>
+                    <a href="https://wa.me/56900000000?text=Hola,%20quiero%20agendar%20una%20sesión%20en%20el%20horario%20de%20Tarde" target="_blank" class="px-3 py-1.5 bg-brand-teal/10 text-brand-teal text-xs font-bold rounded border border-brand-teal/20 hover:bg-brand-teal hover:text-white transition">Bloque Tarde</a>
+                    <a href="https://wa.me/56900000000?text=Hola,%20quiero%20consultar%20disponibilidad%20de%20horas" target="_blank" class="px-3 py-1.5 bg-brand-fuchsia text-white text-xs font-bold rounded shadow-sm hover:opacity-90 transition">Consultar otra hora</a>
                 </div>
             </div>
-
-            <!-- TARJETA PROFESIONAL 2 (Mockup) -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-200">
-                <div class="flex items-center space-x-4 mb-4 pb-4 border-b border-gray-100">
-                    <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" class="w-16 h-16 rounded-full object-cover border-2 border-brand-fuchsia">
-                    <div>
-                        <h3 class="font-bold text-gray-800">Ps. Camila (Ejemplo)</h3>
-                        <p class="text-xs text-brand-fuchsia font-semibold">Terapia Infantil y Adolescentes</p>
-                    </div>
-                </div>
-                
-                <p class="text-xs text-gray-500 mb-3 font-semibold uppercase tracking-wider"><i class="fa-regular fa-calendar-check mr-1"></i> Horas próximas:</p>
-                <div class="flex flex-wrap gap-2">
-                    <a href="https://wa.me/56900000000?text=Hola,%20quiero%20agendar%20con%20Camila%20el%20Martes%20a%20las%2015:00" target="_blank" class="px-3 py-1.5 bg-brand-fuchsia/10 text-brand-fuchsia text-xs font-bold rounded border border-brand-fuchsia/20 hover:bg-brand-fuchsia hover:text-white transition">Mar 15:00</a>
-                    <a href="https://wa.me/56900000000?text=Hola,%20quiero%20agendar%20con%20Camila%20el%20Jueves%20a%20las%2017:00" target="_blank" class="px-3 py-1.5 bg-brand-fuchsia/10 text-brand-fuchsia text-xs font-bold rounded border border-brand-fuchsia/20 hover:bg-brand-fuchsia hover:text-white transition">Jue 17:00</a>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- 5. PREGUNTAS FRECUENTES (LO QUE FALTABA PARA DAR CONFIANZA) -->
+    <!-- 5. PREGUNTAS FRECUENTES -->
     <section class="bg-white px-6 py-16 max-w-3xl mx-auto">
         <h2 class="font-serif text-2xl font-bold text-brand-fuchsia mb-8 text-center">Preguntas Frecuentes</h2>
-        
         <div class="space-y-6 text-sm">
-            <!-- FAQ 1 -->
             <div class="pb-4 border-b border-gray-100">
                 <h4 class="font-bold text-gray-800 mb-2 flex items-center"><i class="fa-solid fa-clock text-brand-teal mr-2"></i> ¿Cuánto dura cada sesión?</h4>
                 <p class="text-gray-600 pl-6">Las sesiones individuales y de pareja tienen una duración de 45 a 50 minutos. El primer encuentro puede extenderse un poco más para la evaluación inicial.</p>
             </div>
-            <!-- FAQ 2 -->
             <div class="pb-4 border-b border-gray-100">
                 <h4 class="font-bold text-gray-800 mb-2 flex items-center"><i class="fa-solid fa-credit-card text-brand-teal mr-2"></i> ¿Cuáles son los métodos de pago?</h4>
                 <p class="text-gray-600 pl-6">Aceptamos transferencias bancarias y pago mediante link. El pago debe realizarse al menos 24 horas antes de la sesión para confirmar la reserva.</p>
             </div>
-            <!-- FAQ 3 -->
             <div class="pb-4 border-b border-gray-100">
                 <h4 class="font-bold text-gray-800 mb-2 flex items-center"><i class="fa-solid fa-video text-brand-teal mr-2"></i> ¿Por dónde nos conectamos?</h4>
                 <p class="text-gray-600 pl-6">Realizamos las sesiones a través de Google Meet o Zoom. Te enviaremos el enlace de conexión directo a tu WhatsApp un día antes de tu cita.</p>
@@ -205,10 +175,11 @@
 
     <!-- 6. FOOTER / PIE DE PÁGINA -->
     <footer class="bg-brand-pink py-12 px-6 text-center border-t border-brand-teal/20">
-        <img src="164963.jpg" alt="Logo" class="h-12 mx-auto mb-4 grayscale opacity-60">
+        <img src="164963.jpg" alt="Logo AR Sicología" class="h-16 mx-auto mb-4 opacity-90">
         
         <p class="text-sm text-gray-600 mb-6 font-semibold">Terapia Psicológica Integrativa y Cercana</p>
         
+        <!-- AQUÍ: Cambia el 56900000000 por tu número -->
         <a href="https://wa.me/56900000000" class="inline-flex items-center justify-center space-x-2 bg-green-500 text-white font-bold px-6 py-3 rounded-full shadow-md text-sm uppercase tracking-wider mt-2 hover:bg-green-600 transition">
             <i class="fa-brands fa-whatsapp text-lg"></i>
             <span>Contacto General</span>
@@ -218,6 +189,7 @@
     </footer>
 
     <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <!-- AQUÍ: Cambia el 56900000000 por tu número -->
     <a href="https://wa.me/56900000000" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 hover:bg-green-600 transition duration-300 transform hover:scale-110">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
