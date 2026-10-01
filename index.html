@@ -12,13 +12,14 @@
     <!-- Navbar -->
     <nav class="bg-white shadow-sm sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- LOGO MODIFICADO: Sin texto al lado y tamaño agrandado -->
+            <!-- Logo -->
             <div class="flex items-center">
                 <img src="164963.jpg" alt="AR Psicología Logo" class="h-20 md:h-24 w-auto object-contain">
             </div>
             
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="#servicios" class="text-slate-600 hover:text-teal-600 transition">Servicios</a>
+                <a href="#infantil" class="text-slate-600 hover:text-teal-600 transition">Psicología Infantil</a>
                 <a href="#tarifas" class="text-slate-600 hover:text-teal-600 transition">Tarifas</a>
                 <a href="#alianzas" class="text-slate-600 hover:text-teal-600 transition">Convenios</a>
                 <a href="#agendar" class="bg-teal-600 text-white px-5 py-2 rounded-full hover:bg-teal-700 transition">Agendar Hora</a>
@@ -31,7 +32,7 @@
         <div class="max-w-6xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-10">
             <div class="flex-1 text-center md:text-left">
                 <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-4">Ps. Aline Rubilar G.</h1>
-                <h2 class="text-xl md:text-2xl text-teal-700 mb-6">Psicología Clínica y Terapia Integral</h2>
+                <h2 class="text-xl md:text-2xl text-teal-700 mb-6">Psicología Clínica, Terapia Integral e Infantil</h2>
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed">
                     Un espacio seguro, confidencial y empático diseñado para acompañarte en tu proceso de autoconocimiento, sanación y crecimiento personal.
                 </p>
@@ -40,7 +41,6 @@
                 </a>
             </div>
             <div class="flex-1 flex justify-center">
-                <!-- Imagen con evento de doble clic -->
                 <img src="164975.png" alt="Ps. Aline Rubilar" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl border-4 border-white cursor-pointer hover:opacity-95 transition" ondblclick="abrirModal()">
             </div>
         </div>
@@ -52,7 +52,7 @@
         <img src="164975.png" alt="Ps. Aline Rubilar Ampliada" class="max-w-[90%] max-h-[90vh] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300" id="modalImg">
     </div>
 
-    <!-- Servicios y Especialidades -->
+    <!-- Servicios Generales -->
     <section id="servicios" class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">Áreas de Atención</h2>
@@ -60,7 +60,7 @@
                 <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                     <i class="fas fa-user text-4xl text-teal-500 mb-4"></i>
                     <h3 class="text-xl font-bold text-slate-700 mb-3">Terapia Individual</h3>
-                    <p class="text-slate-600">Acompañamiento personalizado para manejo de ansiedad, estrés, depresión y desarrollo personal.</p>
+                    <p class="text-slate-600">Acompañamiento personalizado para manejo de ansiedad, estrés, depresión y desarrollo personal en adultos.</p>
                 </div>
                 <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                     <i class="fas fa-user-friends text-4xl text-teal-500 mb-4"></i>
@@ -68,9 +68,55 @@
                     <p class="text-slate-600">Resolución de conflictos, mejora de la comunicación y fortalecimiento del vínculo afectivo.</p>
                 </div>
                 <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <i class="fas fa-brain text-4xl text-teal-500 mb-4"></i>
+                    <i class="fas fa-clipboard-check text-4xl text-teal-500 mb-4"></i>
                     <h3 class="text-xl font-bold text-slate-700 mb-3">Evaluación Psicológica</h3>
                     <p class="text-slate-600">Aplicación de test y entrevistas clínicas para diagnósticos y certificaciones de salud mental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Psicología Infantil -->
+    <section id="infantil" class="py-16 bg-teal-600 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Especialidad en Psicología Infantil</h2>
+                <p class="text-teal-100 text-lg max-w-2xl mx-auto">
+                    Acompañamiento respetuoso y lúdico para niños y adolescentes, brindando orientación a los padres para superar desafíos emocionales, conductuales y del desarrollo.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-teal-700/50 p-6 rounded-2xl border border-teal-500">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-heart text-2xl text-teal-300 mr-3"></i>
+                        <h3 class="text-xl font-bold">Conducta y Emociones</h3>
+                    </div>
+                    <p class="text-teal-50">Manejo de pataletas, agresividad, miedos, fobias, baja autoestima, y trastornos de ansiedad (incluyendo ansiedad por separación).</p>
+                </div>
+                
+                <div class="bg-teal-700/50 p-6 rounded-2xl border border-teal-500">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-puzzle-piece text-2xl text-teal-300 mr-3"></i>
+                        <h3 class="text-xl font-bold">Aprendizaje y Neurodesarrollo</h3>
+                    </div>
+                    <p class="text-teal-50">Apoyo en Condición del Espectro Autista (CEA), TDAH (hiperactividad e impulsividad) y dificultades escolares (lectura, escritura, concentración).</p>
+                </div>
+
+                <div class="bg-teal-700/50 p-6 rounded-2xl border border-teal-500">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-home text-2xl text-teal-300 mr-3"></i>
+                        <h3 class="text-xl font-bold">Adaptación y Duelo</h3>
+                    </div>
+                    <p class="text-teal-50">Acompañamiento ante cambios familiares complejos como divorcios, pérdida de un ser querido (o mascota), y ánimo depresivo infantil.</p>
+                </div>
+
+                <div class="bg-teal-700/50 p-6 rounded-2xl border border-teal-500">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-users text-2xl text-teal-300 mr-3"></i>
+                        <h3 class="text-xl font-bold">Habilidades Sociales</h3>
+                    </div>
+                    <p class="text-teal-50">Desarrollo de herramientas prácticas para que los niños logren relacionarse sanamente con sus pares y gestionar conflictos sociales.</p>
                 </div>
             </div>
         </div>
@@ -83,18 +129,18 @@
             <p class="text-center text-slate-600 mb-12">Opciones flexibles pensadas en tu continuidad y bienestar.</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Tarjeta Adultos -->
+                <!-- Tarjeta Individual / Infantil -->
                 <div class="bg-white p-8 rounded-3xl shadow-lg border-t-4 border-teal-500">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-6 border-b pb-4">Atención Adultos</h3>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6 border-b pb-4">Atención Individual / Infantil</h3>
                     <ul class="space-y-4">
                         <li class="flex justify-between items-center">
-                            <span class="text-slate-700 font-medium">Sesión Individual</span>
+                            <span class="text-slate-700 font-medium">Sesión Única</span>
                             <span class="text-teal-700 font-bold">$XX.XXX</span>
                         </li>
                         <li class="flex justify-between items-center bg-teal-50 p-3 rounded-lg">
                             <div>
                                 <span class="text-slate-800 font-bold block">Pack Mensual (4 Sesiones)</span>
-                                <span class="text-sm text-slate-500">Recomendado para inicio de terapia</span>
+                                <span class="text-sm text-slate-500">Ideal para proceso terapéutico continuo</span>
                             </div>
                             <span class="text-teal-700 font-bold">$XX.XXX</span>
                         </li>
@@ -143,12 +189,12 @@
     </section>
 
     <!-- Agendar -->
-    <section id="agendar" class="py-16 bg-teal-600 text-white">
+    <section id="agendar" class="py-16 bg-slate-800 text-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Inicia tu proceso hoy</h2>
-            <p class="text-teal-100 text-lg mb-8">Agenda tu hora de forma directa y rápida a través de WhatsApp. Atendemos consultas presenciales y online.</p>
-            <a href="https://wa.me/569XXXXXXXX" target="_blank" class="inline-block bg-white text-teal-700 font-bold text-xl px-10 py-4 rounded-full shadow-xl hover:bg-slate-100 hover:scale-105 transition transform duration-300">
-                <i class="fab fa-whatsapp text-green-500 mr-2 text-2xl"></i> Hablar con la Consulta
+            <p class="text-slate-300 text-lg mb-8">Agenda tu hora de forma directa y rápida a través de WhatsApp. Atendemos consultas presenciales y online.</p>
+            <a href="https://wa.me/56975234042" target="_blank" class="inline-block bg-teal-600 text-white font-bold text-xl px-10 py-4 rounded-full shadow-xl hover:bg-teal-500 hover:scale-105 transition transform duration-300">
+                <i class="fab fa-whatsapp text-white mr-2 text-2xl"></i> Hablar con la Consulta
             </a>
         </div>
     </section>
@@ -156,7 +202,7 @@
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-10 text-center">
         <p>&copy; 2024 AR Psicología | Ps. Aline Rubilar G. Todos los derechos reservados.</p>
-        <p class="text-sm mt-2">Atención en Chile - Modalidad Online y Presencial</p>
+        <p class="text-sm mt-2">Atención en Chile - Modalidad Online y Presencial en Santiago</p>
     </footer>
 
     <!-- Script para la foto -->
